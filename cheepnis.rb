@@ -16,7 +16,7 @@ module Cheepnis
   end
 
   def self.on_heroku
-    ENV["HEROKU_UPID"] != nil
+    !!(ENV["HEROKU_UPID"])
   end
 
   def self.get_client
